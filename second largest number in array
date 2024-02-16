@@ -1,0 +1,11 @@
+#second largest number in array
+a=[1,3,4,9,7,5]
+first_max = -999
+second_max = -999
+for i in range(len(a)):
+    if a[i]>first_max:
+        second_max = first_max
+        first_max = a[i]
+    if(a[i]>second_max and a[i]!=first_max):
+        second_max = a[i]
+print("second maximun is",second_max) 
