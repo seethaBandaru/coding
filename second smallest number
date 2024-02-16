@@ -1,0 +1,11 @@
+#second smallest number
+b=[1,4,9,3,7,5]
+first_min = 999
+second_min = 999
+for i in range(len(b)):
+    if b[i]<first_min:
+        second_min = first_min
+        first_min = b[i]
+    if(b[i]<second_min and b[i]!=first_min):
+        second_min = b[i]
+print("second minimun is:",second_min)
