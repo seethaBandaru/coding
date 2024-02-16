@@ -1,0 +1,6 @@
+#linear searching
+a=[5,3,6,8,1,9]
+searching_element = 8
+for i in range(len(a)):
+    if (a[i]==searching_element):
+        print("element {} located at position: {}".format(searching_element,i))
