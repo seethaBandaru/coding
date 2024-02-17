@@ -1,0 +1,7 @@
+s=input()
+m=len(s)
+shuff_s=" "
+for i in range(m):
+    index=int(input("enter an number"))
+    shuff_s = shuff_s + s[index]
+print(shuff_s)
