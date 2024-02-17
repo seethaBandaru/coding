@@ -1,0 +1,15 @@
+def meadian(numbers):
+    b=numbers.split(",")
+    d=[]
+    for i in b:
+        d=d+[int(i)]
+    c=sorted(d)
+    n=len(c)
+    m = n // 2 
+    if n % 2 == 0:
+        return (c[m-1] + c[m]) / 2 
+    else:
+        return c[m] 
+numbers = input()
+result=meadian(numbers)
+print(result)
